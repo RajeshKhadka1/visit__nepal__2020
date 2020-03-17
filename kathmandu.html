@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KTM</title>
+    <link rel="stylesheet" href="palpa.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+        #home{
+     background: url("img/visit.jpg") no-repeat ;
+     background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    clip-path: polygon(100% 0, 100% 100%, 8% 91%, 0 0);
+    /* background-attachment: fixed; */
+}
+
+    }
+</style>
+</head>
+<body>
+
+    <div class="align">
+        <div class="line">
+          <div class="line__fill" id="line__fill">
+            
+          </div>
+        </div>
+      </div>
+    <div class="logo">kathmandu</div>
+   
+     <!-- <header>
+         <div class="logo">palpa</div> 
+         <ul class="nav">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#places">Places</a></li>
+           <li><a href="#Experiences">Experiences</a></li>
+           
+        </ul>
+    </header>   -->
+    <div class="main">
+       
+        </div>
+        <section id="home">
+            <div class="overlay">
+                 
+                    
+                <div class="content">
+                    <h2>Let's visit</h2> <br>
+                    <h2 class="lower">Kathmandu</h2>
+
+                  
+                </div>
+            </div>
+        </section>
+        <section id="places">
+            <div class="container " id="crd1"  >
+                <div class="img" style="background-image: url('img/pasu.jpg');">
+                    <h2 class="namecrd">Pasupatinath</h2>
+                </div>
+                <p  class="test"  >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas delectus nulla earum totam sed, nostrum similique reprehenderit neque. Consequuntur asperiores ad alias ipsum nulla placeat vel modi, quo facilis.</p>
+                <button>Read More</button>
+            </div>
+            <div class="container" id="crd2" >
+                <div class="img" style="background-image: url('img/swam.jpg');">
+                    <h2 class="namecrd">Swayambhunath</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas delectus nulla earum totam sed, nostrum similique reprehenderit neque. Consequuntur asperiores ad alias ipsum nulla placeat vel modi, quo facilis.</p>
+                <button>Read More</button>
+            </div>
+            <div class="container" id="crd3"  >
+                <div class="img" style="background-image: url('img/patan.jpg');">
+                    <h2 class="namecrd">Patan</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas delectus nulla earum totam sed, nostrum similique reprehenderit neque. Consequuntur asperiores ad alias ipsum nulla placeat vel modi, quo facilis.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+        <section id="Experiences">
+            <div class="exp">
+                <h2 class="text">Collect the <br> <span>Experiences</span> </h2>
+            </div>
+            <div class="content" >
+                <div class="left">
+                    <h2 clsss="rani"> Pasupatinath</h2>
+                    <p class="para" style="color: #545454;">
+                        The Pashupatinath Temple is a famous and sacred Hindu temple complex that is located on the banks of the Bagmati River, approximately 5 km north-east of Kathmandu in the eastern part of Kathmandu Valley, the capital of Nepal. The temple serves as the seat of Pashupatinath.
+                        The largest temple complex in Nepal, it stretches on both sides of the Bagmati River which is considered holy by Hindus.  The main pagoda style temple has a gilded roof, four sides covered in silver, and exquisite wood carvings. Temples dedicated to several other Hindu and Buddhist deities surround the the temple of Pashupatinath.
+                    </p>
+                </div>
+     <div class="right imgdiv" id="raniimg" style="background: url('img/pasdis.jpg');">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left imgdiv"  id="food1" style=" background: url('img/swam.jpg');">
+                
+                  
+                </div>
+                <div class="right ">  <h2>Swayambhunath</h2>
+                    <p class="para2" style="color: #545454;">Eating can be a joyful experience in Nepal. From multi cuisine and specialty restaurants and bars about town to home cooked meals from traditional kitchens, there’s a huge variety of street food to choose from too.
+
+                        Swayambhunath is an ancient religious architecture atop a hill in the Kathmandu Valley, west of Kathmandu city. The Tibetan name for the site means 'Sublime Trees' (Wylie: Phags.pa Shing.kun), for the many varieties of trees found on the hill. However, Shing.kun may be a corruption of the local Nepal Bhasa name for the complex, Swayambhu, meaning 'self-sprung'...</p></div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h2 >Patan Darbar Square</h2>
+                    <p  class="lst"style="color: #545454;">Exquisite handicrafts flourish in Nepal. From handmade lokta paper to woven Dhaka shawls and pashmina, from artistic silver and metal ware to stone carvings, wood works and paintings, there is something magical in the hand crafted products which carry skills that have been passed down generations to retain their authentic traditional roots. You can purchase these products from a hotel store, street shops as well as custom souvenir and handicraft stores and emporiums.</p>
+                </div>
+                <div class="right imgdiv"style=" background: url('img/patandis.jpg');"   id="maile"></div>
+            </div>
+            <div class="talakopart">
+    
+            </div>
+        </section>
+        
+    </div>
+   
+</body>
+
+<script>
+ 
+ $(document).ready(function(){
+$(window).scroll(function(){
+// body.style="overflow-x:hidden";
+ var positiontop=$(document).scrollTop(); 
+  console.log(positiontop);
+
+  
+   if((positiontop > 550) && (positiontop< 1036))
+   {
+
+       
+    $("#crd1").addClass('animated slideInLeft');
+         $("#crd2").addClass('animated bounceInUp');
+         $("#crd3").addClass('animated slideInRight');
+       
+   }
+
+
+   if((positiontop > 850) && (positiontop< 1193))
+   {
+
+       
+    $(".exp").addClass('animated slideInLeft');
+
+          
+       
+       
+   }
+
+
+   if((positiontop > 1306) && (positiontop< 1371))
+   {
+
+    $(".para").addClass('animated slideInLeft ');
+         $("#raniimg").addClass('animated zoomInUp');
+
+       
+       
+   }
+
+   
+   if((positiontop > 1580) && (positiontop< 2013))
+   {
+
+       
+    $(".para2").addClass('animated slideInRight');
+         $("#food1").addClass('animated slideInLeft');
+
+
+          
+       
+       
+   }
+
+   
+
+
+   if((positiontop > 2056) && (positiontop< 2407))
+   {
+
+       
+         $(".lst").addClass('animated slideInLeft');
+         $("#maile").addClass('animated bounceInDown');
+
+          
+       
+       
+   }
+
+
+
+
+
+
+
+
+
+
+
+});
+});
+
+
+window.addEventListener("scroll",()=>{
+   var windowh=window.pageYOffset;
+   var windowa=document.body.scrollHeight;
+   var viewport_height=window.innerHeight;
+   console.log(windowh);
+   percent=eval((windowh/(windowa-viewport_height))*100);
+   document.querySelector(".line").style.width=percent+"%";
+})
+
+
+</script>
+</html>

@@ -1,0 +1,135 @@
+<html>
+<head>
+<style>
+*{
+margin: 0px;
+padding: 0px;
+font-family: sans-serif;
+}
+body{
+	background: #3e5669;
+}
+main{
+	position: absolute;
+	padding-top: 15%;
+	padding-left: 1175%;
+	transform:translate(-50%,-50%);
+}
+.searchTerm{
+	border: 3px solid #2bd374;
+	height: 40px;
+	width: 300px;
+ 
+    position: relative;
+    
+}
+#hel{
+    height: 40px;
+	width: 300px;
+	border-radius: 50px;
+	padding: 0px 10px;
+    position: relative;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 100;
+
+}
+
+#hel::after{
+    content: '';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    
+    background-color: #32e17c;
+
+
+}
+button{
+border: 3px solid #c22929;
+	height: 20px;
+	width: 70px;
+	border-radius: 100px;
+	padding: 0px 10px;
+    display: none;
+}
+#hel .img{
+    height: 15px;
+    width: 15px;
+   
+    
+    background: url("download.png");
+
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50px;
+}
+#a{
+    background-image: url("chh.jpeg");
+    height: 100px;
+    
+}
+</style>
+
+</head>
+<body>
+
+<form align="center">
+<div class="main"> 
+    <div name="text" id="hel"  > 
+      <input type="search" class="searchTerm" placeholder="search tourism ..........." id="aa"></div>
+     <div class="img" ></div>
+      <button onclick="abc()">search</button>
+     
+     </div>
+</form>
+<div class="grid-container">
+    <div id="a"><img src="chh.jpeg"></div>
+    <div id="b"><img src="chh.jpeg"></div>
+    <div id="c"><img src="chh.jpeg"></div>
+    <div id="d"><img src="chh.jpeg"></div>
+    <div id="e"><img src="chh.jpeg"></div>
+    <div id="g"><img src="chh.jpeg"></div>
+  </div>
+
+  <script>
+function abc(){
+var a=document.getElementById("aa").value;
+if(a!=0)
+{
+if(a=="home" || a=="HOME")
+{
+window.open("home.html");
+
+}
+else if (a=="youtube")
+ {
+ 	window.open("http://www.youtube.com");
+ }
+ else if (a=="lumbini" || a=="buddha" || a=="gautam buddha"){
+ 	window.open("lumbini.html");
+
+
+ }
+else{
+window.open(" http://google.com/?");
+
+}
+}
+}
+</script>
+</body>
+</html>

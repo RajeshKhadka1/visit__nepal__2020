@@ -1,0 +1,238 @@
+ *{
+     padding: 0;
+     margin: 0;
+      /* overflow: hidden;  */
+      overflow: hidden;
+
+ }
+  .cross{
+   
+     position: absolute;
+     right: 40px;
+     top:20px;
+     height: 50px;
+     width: 50px;
+     transform-origin: center;
+     
+     /* background-color: orange; */
+      border-radius: 50px; 
+     
+
+}
+.cross p{
+    transform-origin: center;
+
+    margin-left:18px;
+     margin-top: 5px;
+    cursor: pointer;
+    transition: .3s;
+ 
+align-items: center;
+    color:black;
+    font-family: sans-serif;
+    font-size: 30px;
+     font-style: normal;
+     opacity: .5;
+}
+.cross:hover p{
+  
+    border-radius: 20px;
+    transform:rotate(360deg);
+    opacity: 1;
+}  
+
+
+ 
+
+::selection{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+ .slide-container{
+    height: 500px;
+    width: 800px; 
+    margin:90px  40px 0px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 20px  20px rgba(0,0,0,0.5);
+
+ } 
+ .image-container{
+     width:4800px;
+     height: 500px;
+     position: relative;
+     transition: left 2s;
+     -webkit-transition: left 2s;
+     -moz-transition: left 2s;
+ }
+  .slider-image{
+     float: left ; 
+     margin: 0;
+     padding: 0 ;
+
+  }
+  .button-container{
+     top: -30px;
+     position: relative; 
+  }
+.slider-button{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+
+}
+ a:hover{
+     background: black;
+ }
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+#slider-image-2:target ~ .image-container{
+    left: -800px;
+}
+#slider-image-3:target ~ .image-container{
+    left:  -1600px;
+}
+#slider-image-4:target ~ .image-container{
+    left:  -2400px;
+}#slider-image-5:target ~ .image-container{
+    left:  -3200px;
+}#slider-image-6:target ~ .image-container{
+    left:  -4000px;
+}
+ 
+ .content{
+    
+
+      height: 400px;
+      width: 300px;
+      background-color: black;
+      position: relative;  
+       float: right;  
+      margin-top: -450px;
+      margin-right: 70px;
+      transform: translateX(140%);
+        transition: 0.3s;  
+      box-shadow: 0px 20px  20px rgba(0,0,0,0.5);
+      cursor: pointer;
+
+
+       
+      
+ }
+ 
+
+ .dis-img1{
+   
+        position: absolute;
+        height: 400px;
+         width: 300px;
+         object-fit: cover;
+         transition: 0.3s;
+     
+ }
+ .dis-img2{
+   
+    position: absolute;
+    height: 400px;
+     width: 300px;
+     object-fit: cover;
+     transition: 0.5s;
+ 
+}.dis-img3{
+   
+    position: absolute;
+    height: 400px;
+     width: 300px;
+     object-fit: cover;
+     transition: 0.5s;
+ 
+}.dis-img4{
+   
+    position: absolute;
+    height: 400px;
+     width: 300px;
+     object-fit: cover;
+     transition: 0.5s;
+ 
+}.dis-img5{
+   
+    position: absolute;
+    height: 400px;
+     width: 300px;
+     object-fit: cover;
+     transition: 0.5s;
+ 
+}.dis-img6{
+   
+    position: absolute;
+    height: 400px;
+     width: 300px;
+     object-fit: cover;
+     transition: 0.5s;
+ 
+}
+ .content:hover .dis-img1{
+     opacity: 0;
+ }
+
+ .discon{
+     
+    background: #fff;
+    position: absolute;
+    bottom: 20px;
+    width: 70%;
+    height: 60px;
+    left: 17%;
+    transition: .5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+     
+ }
+ .discon h2{
+   
+        text-align: center;
+        font-family: cursive;
+        text-transform: uppercase;
+  
+ }
+ .content .discon p{
+    transform: translateY(20px);
+    margin: 20px 0 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: sans-serif;
+        opacity: 0;     
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+
+ }
+ .content:hover p{
+    opacity: 1;
+    transition-delay:0.5s ;
+    transform: translateY(0px);
+
+ }
+ .content:hover .discon {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: sandybrown;
+ }
+
+ #id1{
+    transform: translateX(0%);
+
+ }
+
+ #btn1{
+     background-color: black;
+ }

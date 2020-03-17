@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="palpa.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+</head>
+<body>
+    <div class="logo">palpa</div>
+   
+     <!-- <header>
+         <div class="logo">palpa</div> 
+         <ul class="nav">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#places">Places</a></li>
+           <li><a href="#Experiences">Experiences</a></li>
+           
+        </ul>
+    </header>   -->
+    <div class="main">
+       
+        </div>
+        <section id="home">
+            <div class="overlay">
+                 
+                    
+                <div class="content">
+                    <h2>Let's Begin</h2> <br>
+                    <h2 class="lower">The Adventure</h2>
+
+                  
+                </div>
+            </div>
+        </section>
+        <section id="places">
+            <div class="container " id="crd1"  >
+                <div class="img" style="background-image: url('img/budcard.png');">
+                    <h2 class="namecrd">Rupendehi</h2>
+                </div>
+                <p  class="test" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas delectus nulla earum totam sed, nostrum similique reprehenderit neque. Consequuntur asperiores ad alias ipsum nulla placeat vel modi, quo facilis.</p>
+                <button>Read More</button>
+            </div>
+            <div class="container" id="crd2" >
+                <div class="img" style="background-image: url('img/r3.jpg');">
+                    <h2 class="namecrd">Palpa</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas delectus nulla earum totam sed, nostrum similique reprehenderit neque. Consequuntur asperiores ad alias ipsum nulla placeat vel modi, quo facilis.</p>
+                <button>Read More</button>
+            </div>
+            <div class="container" id="crd3"  >
+                <div class="img" style="background-image: url('img/bardiya.jpeg');">
+                    <h2 class="namecrd">Bardiya</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas delectus nulla earum totam sed, nostrum similique reprehenderit neque. Consequuntur asperiores ad alias ipsum nulla placeat vel modi, quo facilis.</p>
+                <button>Read More</button>
+            </div>
+        </section>
+        <section id="Experiences">
+            <div class="exp">
+                <h2 class="text">Collect the <br> <span>Experiences</span> </h2>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h2 clsss="rani"> Rani Mahal</h2>
+                    <p class="para">Also known as the Taj Mahal of Nepal, Rani Mahal was built as the symbol of love for the beloved late wife of General Khadga Shumsher Jung Bahadur Rana. The palace was built in the 19th century at the banks of the Kali Gandaki River, between Syangja and Palpa. Situated at the distance of 13 km from Tansen, the palace looks attractive sitting on a massive rock at a secluded and a quiet place.
+                        n the year 1887, General Khadga SJB Rana  was forced to give up his royal title and was sent to Palpa as the western commander in chief of Nepal. In the year 1992, Khadga Shumsher went through an unexpected tremor of losing his youngest wife Tej Kumari Devi. Saddened by the incident he called upon the architects from abroad to make a piece of art in the name of his beautiful wife. Thus the Rani Mahal (Queen’s Palace) came into existence.
+                    </p>
+                </div>
+                <div class="right imgdiv" id="raniimg"></div>
+            </div>
+            <div class="content">
+                <div class="left imgdiv"  id="food1"style=" background: url('img/food.jpg');   clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+                ">
+                  
+                </div>
+                <div class="right ">  <h2>Palpali Food Culture</h2>
+                    <p class="para2">Eating can be a joyful experience in Nepal. From multi cuisine and specialty restaurants and bars about town to home cooked meals from traditional kitchens, there’s a huge variety of street food to choose from too.
+
+                        Any time is momo time. Momos are traditional dumplings that can be found in remote tea houses and with equal élan at high end restaurants. From freshly caught river fish to dried smoky meats and yak cheese, from freshly grown garden vegetables and herbs to crunchy mountain apples, from home brewed spirits to the beautiful selection of teas, there’s a whole lot waiting for your palate to discover.</p></div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h2 >Palpali Crafts</h2>
+                    <p>Exquisite handicrafts flourish in Nepal. From handmade lokta paper to woven Dhaka shawls and pashmina, from artistic silver and metal ware to stone carvings, wood works and paintings, there is something magical in the hand crafted products which carry skills that have been passed down generations to retain their authentic traditional roots. You can purchase these products from a hotel store, street shops as well as custom souvenir and handicraft stores and emporiums.</p>
+                </div>
+                <div class="right imgdiv"style=" background: url('img/craft.jpg');" ></div>
+            </div>
+            <div class="talakopart">
+    
+            </div>
+        </section>
+        
+    </div>
+   
+</body>
+
+<script>
+ 
+ $(document).ready(function(){
+$(window).scroll(function(){
+// body.style="overflow-x:hidden";
+ var positiontop=$(document).scrollTop(); 
+  console.log(positiontop);
+
+  
+   if((positiontop > 550) && (positiontop< 1036))
+   {
+
+       
+         $("#crd1").addClass('animated slideInLeft');
+         $("#crd2").addClass('animated bounceInUp');
+         $("#crd3").addClass('animated slideInRight');
+       
+       
+   }
+
+
+   if((positiontop > 850) && (positiontop< 1193))
+   {
+
+       
+         $(".exp").addClass('animated bounce');
+          
+       
+       
+   }
+
+
+   if((positiontop > 1306) && (positiontop< 1371))
+   {
+
+       
+         $(".para").addClass('animated zoomInUp');
+         $("#raniimg").addClass('animated zoomInUp');
+
+          
+       
+       
+   }
+
+   
+   if((positiontop > 1580) && (positiontop< 2013))
+   {
+
+       
+         $(".para2").addClass('animated rollIn');
+         $("#food1").addClass('animated rollIn');
+
+          
+       
+       
+   }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+});
+
+
+
+</script>
+</html>
